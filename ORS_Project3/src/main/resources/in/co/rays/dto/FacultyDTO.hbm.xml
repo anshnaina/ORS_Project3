@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name = "com.sunilOS.ORSProject3.dto.FacultyDTO" table = "ST_FACULTY">	
+		 <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="collegeId" type="java.lang.Long">
+			<column name="COLLEGE_ID" />
+		</property>
+		<property name="collegeName" type="java.lang.String">
+			<column name="COLLEGE_NAME" />
+		</property>
+		<property name="courseId" type="java.lang.Long">
+			<column name="COURSE_ID" />
+		</property>
+		<property name="courseName" type="java.lang.String">
+			<column name="COURSE_NAME" />
+		</property>
+		<property name="firstName" type="java.lang.String">
+			<column name="FIRST_NAME" />
+		</property>
+		<property name="lastName" type="java.lang.String">
+			<column name="LAST_NAME" />
+		</property>
+		<property name="qualification" type="java.lang.String">
+			<column name="QUALIFICATION" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="EMAIL" />
+		</property>
+		<property name="mobileNo" type="java.lang.String">
+			<column name="MOBILE_NO" />
+		</property>
+		<property name="dob" type="java.util.Date">
+			<column name="DATE_OF_BIRTH" />
+		</property>
+		<property name="gender" type="java.lang.String">
+			<column name="GENDER" />
+		</property>
+		<property name="createdBy" type="java.lang.String">
+			<column name="CREATED_BY" />
+		</property>
+		<property name="modifiedBy" type="java.lang.String">
+			<column name="MODIFIED_BY" />
+		</property>
+		<property name="createdDatetime" type="java.sql.Timestamp">
+			<column name="CREATED_DATETIME" />
+		</property>
+		<property name="modifiedDatetime" type="java.sql.Timestamp">
+			<column name="MODIFIED_DATETIME" />
+		</property>
+	</class>
+</hibernate-mapping>

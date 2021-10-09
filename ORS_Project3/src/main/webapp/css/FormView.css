@@ -1,0 +1,27 @@
+
+.tbox{width:5cm; height: 30px; padding-left: 15px; border-radius: 50px; border:2px solid; 
+margin-bottom: 10px; outline: none; font-size: small; transition: 0.8s; color: #343a40 ;}
+	 
+.tbox:focus{border: 2px solid #808080; transition: 0.8s; color: #343a40;}
+
+.btn{border-radius: 50px; margin-top: 10px; margin-bottom: 10px; outline: none; transition: 0.6s;}
+
+.btn:hover{background-color: yellow; transition: 0.6s;}
+
+
+
+.srpnbtn {
+  background-color: #343a40;
+  color: white;
+}
+
+.srpnbtn.disabled, .srpnbtn[disabled] {
+  background-color: gray;
+  color: white;
+}
+
+.srpnbtn:hover:enabled {
+  background-color: #808080;
+  color: #343a40;
+  transition: 0.3s;
+}
